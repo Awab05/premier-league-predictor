@@ -153,7 +153,14 @@ nav li:hover::after{width:50%}
   margin:3rem auto;text-align:center;
   display:flex;flex-direction:column;align-items:center;gap:.6rem;
 }
-.ring-wrapper{position:relative;width:150px;height:150px;}
+.accuracy-title {
+  font:900 .8rem/1 "Arial Black";
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.ring-wrapper{position:relative;width:175px;height:175px;}
+
 .ring-chart{width:100%;height:100%;transform:rotate(-90deg);}
 .ring-bg{fill:none;stroke:var(--pl-purple);stroke-width:4;}
 .ring-metric{
@@ -206,26 +213,31 @@ nav li:hover::after{width:50%}
 .bar-label .pct{color:var(--pl-green);font-weight:bold}
 
 /* ==========  LOGO — HAZY NEON FRAME ========== */
-.logo-wrap{
-  position:relative;
-  width:90px;height:90px;
-  padding:6px;                     /* space around badge */
-  border-radius:12px;overflow:hidden;
-  background:rgba(0,255,183,.05);  /* faint tint */
-  box-shadow:
-     0 0 12px 4px var(--pl-green) inset,
-     0 0 22px 6px var(--pl-green);
+.logo-wrap {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  padding: 6px;
+  border-radius: 12px;
+  border: 2px solid var(--pl-green); /* clean border */
+  background-color: transparent;
 }
+
+
 .logo-wrap::before{               /* extra mist layer */
   content:"";position:absolute;inset:0;border-radius:inherit;
-  background:var(--pl-green);opacity:.35;filter:blur(14px);z-index:-1;
+  transition: box-shadow 0.3s ease;
 }
 .logo-wrap img{
   width:100%;height:100%;object-fit:contain;display:block;transition:.25s;
 }
-.logo-wrap:hover img{
-  filter:drop-shadow(0 0 10px var(--pl-green));
+.logo-wrap:hover {
+  box-shadow:
+    0 0 8px 4px var(--pl-green),
+    0 0 16px 8px var(--pl-green);
+  transition: box-shadow 0.3s ease;
 }
+
 .logo-wrap:hover::before{
   opacity:.55;filter:blur(20px);
 }
@@ -234,3 +246,32 @@ nav li:hover::after{width:50%}
 .logo-wrap.jumbo{
   width:160px;height:160px;padding:8px;border-radius:16px;
 }
+
+.grid-title-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -2rem;
+}
+
+.grid-title-box h3 {
+  font:900 .8rem/1 "Arial Black";
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  border: 2px solid var(--pl-green);
+  border-radius: 12px;
+  box-shadow:
+  background-color rgba(0, 255, 183, 0.05);
+}
+
+.tagline {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--pl-green);
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.4;
+  text-shadow: 0 0 6px var(--pl-green); /* glow effect */
+}
+
+
