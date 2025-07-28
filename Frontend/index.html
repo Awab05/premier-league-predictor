@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prem Predictor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ═════════ HEADER ═════════ -->
+<header>
+
+<a href="index.html" class="badge">
+  Prem <img src="images/logo.png" alt="Premier League logo" /> Predictor
+</a>
+
+</header>
+
+
+  <!-- ═════════ NAVIGATION ═════ -->
+  <nav>
+    <ul>
+      <li><a href="#">FIXTURES</a></li>
+      <li><a href="#">PREDICTOR</a></li>
+      <li><a href="past-results.html">PAST RESULTS</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═════════ HERO SECTION (flex) ═══ -->
+  <main class="hero-section">
+
+    <!-- ▸ LEFT STAT BOX -->
+    <aside class="left-box">
+      <h3>Season Stats</h3>
+      <p>Total Games: <strong>25</strong></p>
+      <p>Correct Results: <strong>25</strong></p>
+      <p>Upsets Predicted: <strong>4</strong></p>
+      <p class="tagline">“AI-powered Premier League predictions, match by match.”</p>
+    </aside>
+
+    <!-- ▸ CENTER COLUMN -->
+    <section class="center-col">
+
+      <!-- ACCURACY RING -->
+      <section class="accuracy-ring">
+          <h3 class="accuracy-title">Prediction Accuracy</h3>
+        <div class="ring-wrapper">
+          <svg viewBox="0 0 36 36" class="ring-chart">
+            <path class="ring-bg"
+                  d="M18 2.084 a 15.916 15.916 0 0 1 0 31.832
+                     a 15.916 15.916 0 0 1 0 -31.832" />
+            <path class="ring-metric"
+                  d="M18 2.084 a 15.916 15.916 0 0 1 0 31.832
+                     a 15.916 15.916 0 0 1 0 -31.832" />
+          </svg>
+          <span class="ring-percent">66%</span>
+        </div>
+        <p class="ring-label">
+          <small>2024-25 Season</small>
+        </p>
+      </section>
+
+      <!-- BADGE GRID -->
+<div class="grid-title-box">
+  <h3>Our Previous Predictions (2024-25)</h3>
+</div>
+
+      <section class="club-grid">
+
+        <!-- Liverpool -->
+        <div class="club-card">
+          <div class="logo-wrap jumbo">
+            <img src="images/liverpool.png" alt="Liverpool badge">
+          </div>
+          <div class="overlay">
+            <h4>Liverpool</h4>
+            <p class="wins">Predicted Wins: <strong>23 / 25</strong></p>
+            <div class="bar"><div class="fill" style="width:100%"></div></div>
+            <p class="bar-label">Accuracy&nbsp;<span class="pct">92%</span></p>
+          </div>
+        </div>
+
+        <!-- Arsenal -->
+        <div class="club-card">
+          <div class="logo-wrap jumbo">
+            <img src="images/arsenal.png" alt="Arsenal badge">
+          </div>
+          <div class="overlay">
+            <h4>Arsenal</h4>
+            <p class="wins">Predicted Wins: <strong>17 / 20</strong></p>
+            <div class="bar"><div class="fill" style="width:85%"></div></div>
+            <p class="bar-label">Accuracy&nbsp;<span class="pct">85%</span></p>
+          </div>
+        </div>
+
+        <!-- Manchester City -->
+        <div class="club-card">
+          <div class="logo-wrap jumbo">
+            <img src="images/man-city.png" alt="Manchester City badge">
+          </div>
+          <div class="overlay">
+            <h4>Manchester City</h4>
+            <p class="wins">Predicted Wins: <strong>18 / 21</strong></p>
+            <div class="bar"><div class="fill" style="width:85.7%"></div></div>
+            <p class="bar-label">Accuracy&nbsp;<span class="pct">85.7%</span></p>
+          </div>
+        </div>
+
+        <!-- Chelsea -->
+        <div class="club-card">
+          <div class="logo-wrap jumbo">
+            <img src="images/chelsea.png" alt="Chelsea badge">
+          </div>
+          <div class="overlay">
+            <h4>Chelsea</h4>
+            <p class="wins">Predicted Wins: <strong>19 / 20</strong></p>
+            <div class="bar"><div class="fill" style="width:90%"></div></div>
+            <p class="bar-label">Accuracy&nbsp;<span class="pct">90%</span></p>
+          </div>
+        </div>
+
+      </section><!-- /club-grid -->
+    </section><!-- /center-col -->
+
+    <!-- ▸ RIGHT PLAYER IMAGE -->
+    <aside class="player-side">
+      <img src="images/palmer.png" alt="Featured player">
+    </aside>
+
+  </main><!-- /hero-section -->
+</body>
+</html>
